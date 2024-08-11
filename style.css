@@ -1,0 +1,120 @@
+/* External CSS for Company Home Page */
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Web Font */
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header img {
+    border-radius: 50%; /* Rounded Border */
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Service List Styling */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px; /* Rounded Border */
+}
+
+/* Audio and Video Section */
+audio, video {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 640px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Pseudo-classes */
+a:hover {
+    color: #ff6600;
+}
+
+/* Pseudo-elements */
+h1::after {
+    content: " - Empowering Your Business";
+    font-size: 0.8em;
+    color: #777;
+}
+
+/* ID Selector */
+#company-details {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+/* Class Selector */
+.service-item {
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Descendant Selector */
+section ul li img {
+    margin-top: 10px;
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Grouping Selector */
+h2, footer p {
+    margin-bottom: 10px;
+}
