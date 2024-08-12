@@ -1,18 +1,15 @@
-/* External CSS for Company Home Page */
 
-/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif; /* Web Font */
+    font-family: 'Arial', sans-serif; 
     line-height: 1.6;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: lightblue;
 }
 
 /* Header Styling */
@@ -22,8 +19,43 @@ header {
 }
 
 header img {
-    border-radius: 50%; /* Rounded Border */
+    border-radius: 10px;
+    width: 150px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */ 
 }
+
+/* Navbar Styling */
+nav {
+    background-color:#f9f9f9; /* Background color of the navbar */
+    padding: 5px 0; /* Padding around the navbar */
+    color:#fff;
+    text-align:center;
+}
+
+.navbar {
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none; /* Remove default list styling */
+}
+
+.navbar li {
+    margin: 0 15px; /* Space between each nav item */
+}
+
+.navbar a {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    padding: 10px 15px; /* Padding around the text */
+    display: inline-block; /* Ensures padding works */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Background color on hover */
+    color: #ff6600; /* Text color on hover */
+}
+
 
 /* Table Styling */
 table {
@@ -34,14 +66,54 @@ table {
 
 table th, table td {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     text-align: left;
 }
 
-/* Service List Styling */
-ul {
-    list-style-type: none;
+/* Container for Services */
+.services-container {
+    display: flex; /* Display items in a row */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 20px; /* Space between items */
+    margin: 0 auto; /* Center the container */
 }
+
+/* Service Item Styling */
+.service-item {
+    flex: 1 1 calc(25% - 20px); /* Four items per row with space between */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex; /* Flex for vertical alignment */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align items */
+    justify-content: space-between; /* Space out items */
+}
+
+.service-item img {
+    width: 100%; /* Make image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Limit max width of the image */
+    border-radius: 10px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .service-item {
+        flex: 1 1 calc(50% - 20px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-item {
+        flex: 1 1 100%; /* One item per row on very small screens */
+    }
+}
+
 
 ul li {
     margin: 10px 0;
